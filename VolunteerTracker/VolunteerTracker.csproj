@@ -179,9 +179,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805120321508_Initial.cs" />
-    <Compile Include="Migrations\201805120321508_Initial.Designer.cs">
-      <DependentUpon>201805120321508_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201805161439592_Initial.cs" />
+    <Compile Include="Migrations\201805161439592_Initial.Designer.cs">
+      <DependentUpon>201805161439592_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805161554570_UpdateEndTimeOnView.cs" />
+    <Compile Include="Migrations\201805161554570_UpdateEndTimeOnView.Designer.cs">
+      <DependentUpon>201805161554570_UpdateEndTimeOnView.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Event.cs" />
@@ -259,8 +263,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805120321508_Initial.resx">
-      <DependentUpon>201805120321508_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805161439592_Initial.resx">
+      <DependentUpon>201805161439592_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805161554570_UpdateEndTimeOnView.resx">
+      <DependentUpon>201805161554570_UpdateEndTimeOnView.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

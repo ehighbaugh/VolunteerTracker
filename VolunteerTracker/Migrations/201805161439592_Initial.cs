@@ -13,8 +13,9 @@ namespace VolunteerTracker.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Title = c.String(),
-                        Date = c.DateTime(nullable: false),
-                        Time = c.DateTime(nullable: false),
+                        Date = c.DateTime(),
+                        Time = c.DateTime(),
+                        EndTime = c.DateTime(nullable: false),
                         Location = c.String(),
                         Address = c.String(),
                         Contact = c.String(),

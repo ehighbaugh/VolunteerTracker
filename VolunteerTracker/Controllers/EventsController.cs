@@ -47,7 +47,7 @@ namespace VolunteerTracker.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Date,Time,Location,Address,Contact,Phone,Email,VolunteersNeeded")] Event @event)
+        public ActionResult Create([Bind(Include = "Id,Title,Date,Time,EndTime,Location,Address,Contact,Phone,Email,VolunteersNeeded")] Event @event)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace VolunteerTracker.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Date,Time,Location,Address,Contact,Phone,Email,VolunteersNeeded")] Event @event)
+        public ActionResult Edit([Bind(Include = "Id,Title,Date,Time,EndTime,Location,Address,Contact,Phone,Email,VolunteersNeeded")] Event @event)
         {
             if (ModelState.IsValid)
             {

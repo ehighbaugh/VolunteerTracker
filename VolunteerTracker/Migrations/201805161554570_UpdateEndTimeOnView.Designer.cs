@@ -7,13 +7,13 @@ namespace VolunteerTracker.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Initial : IMigrationMetadata
+    public sealed partial class UpdateEndTimeOnView : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateEndTimeOnView));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805120321508_Initial"; }
+            get { return "201805161554570_UpdateEndTimeOnView"; }
         }
         
         string IMigrationMetadata.Source
