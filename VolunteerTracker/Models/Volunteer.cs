@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -13,6 +15,8 @@ namespace VolunteerTracker.Models
         public string HomePhone { get; set; }
         public string CellPhone { get; set; }
         public string Email { get; set; }
+        [DisplayName("Birthday")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime Birthday { get; set; }
 
         public virtual IList<Organization> Organizations { get; set; }
